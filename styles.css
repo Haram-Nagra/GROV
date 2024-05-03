@@ -1,0 +1,15 @@
+.logo{
+    background-image: url("./assets/logo.svg");
+}
+.dash{
+    background-image: url("./assets/pic1.svg");
+}
+.ads{
+    background-image: url("./assets/PostAds.svg");
+}
+.compass{
+    background-image: url("./assets/Drafting\ Compass.svg");
+}
+.cursor{
+    background-image: url("./assets/Cursor\ in\ Window.svg");
+}
