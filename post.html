@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROV</title>
+    <link
+            rel="icon"
+            href="./assets/logo3.svg"
+            type="image/svg"
+        />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        xs: "315px"
+                    },
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-[#0F0F0F] text-white font-[Proxima Nova] font-bold">
+    <header class=" flex flex-row text-[#FFFFFF] ">
+        <nav class="flex flex-row p-3 px-20 gap-x-10 justify-between w-full border-b border-b-[#545454] fixed ">
+            <div class="flex items-center">
+                <a class="block border border-black hover:bg-gradient-to-t rounded px-2 py-1 md:hidden "
+                    ><i class="fa fa-bars"></i></a>
+                <a class="h-[29px] w-[115px]"><div class="logo bg-auto object-contain h-full w-full"></div></a>
+            </div>
+            <div class="flex flex-row p-3 gap-x-10 font-bold">
+                <a href="./education.html" class="hidden  text-xs md:block">Projekti</a>
+                <a href="./skills.html" class="hidden text-xs md:block">Storetvi</a>
+                <button class=" rounded-xl h-[30px] w-[96px] -mt-2 bg-[#E5313A] hidden md:block"><a href="./experience.html" class="hidden text-xs md:block">Kontakt</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="flex flex-row mt-28  justify-between p-40">
+
+        <div class="flex flex-row gap-x-6 p-8 items-start ">
+            <div>
+                <div class="w-[90px] h-[90px] bg-[#FF2E2E] flex flex-col justify-center items-center rounded-full shadow-lg shadow-[#E5313A] ">
+                    <div class="w-[33px] h-[33px] ">
+                        <div class='bigphone bg-auto object-contain  h-full w-full'></div>
+                    </div></div>
+            </div>
+                <div class="flex flex-col gap-y-6 justfify-center">
+                    <div class="text-white text-6xl items-center text-start mb-10"><h1>Oglasevange</h1></div>
+                    <div class="text-white text-xl text-start font-normal">
+                        <h1>To je pravo mesto za vse, ki iščejo odlično ekipo za razvoj izdelkov.
+                            Ne oklevajte in pustite e-pošto, pokličite telefon ali preprosto izpolnite obrazec.</h1>
+                    </div>
+                </div>
+        </div>
+
+        <div id="form" class="flex flex-col items-center gap-y-4 ">
+            <div class="flex flex-row items-center justify-between w-[500px]">
+                <input
+                class="p-2  h-[40px] w-[240px] bg-white rounded-3xl mt-6 placeholder-gray focus:outline-none font-normal"
+                type="text" id="fname" name="fname" placeholder="Name">
+                <input
+                class=" p-2 h-[40px] w-[240px] bg-white rounded-3xl placeholder-gray focus:outline-none font-normal mt-6"
+                type="text" id="em" name="em" placeholder="Email">
+            </div>
+    
+            <textarea
+                class="p-2 h-[200px] w-[500px] bg-white rounded-3xl placeholder-gray focus:outline-none font-normal"
+                id="mname " name="msg" placeholder="Message"></textarea>
+    
+            <button class=" bg-white rounded-3xl w-[500px] h-[40px]" type="button" bg-white rounded-3xl >Submit</button>
+        </div>
+    </div>
+
+    <footer class=" flex flex-row text-[#FFFFFF] border-t border-t-[#545454] py-14 px-40 justify-between">
+        <div class="flex flex-col justify-between items-center">
+            <div class="w-[219px] h-[55px] ">
+                <div class='logofoot bg-auto object-contain  h-full w-full'></div>
+                <h1 class="text-xs font-thin"> @Copyright Grov Agency 2023</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-y-6">
+            <div class="flex flex-row gap-x-6 items-center w-[300px]">
+                <div class="w-[25px] h-[30px] ">
+                    <div class='insta bg-auto object-contain  h-full w-full'></div>
+                </div>
+                <h1 class="text-xs font-thin -ml-5">@grov.agency</h1>
+                <div class="w-[25px] h-[30px] ">
+                    <div class='phone bg-auto object-contain  h-full w-full'></div>
+                </div>
+                <h1 class="text-xs font-thin -ml-5">+386 470 427 410</h1>
+            </div>
+            <div class="flex flex-row gap-x-6 items-center w-[300px]">
+                <div class="w-[25px] h-[30px] ">
+                    <div class='linkedin bg-auto object-contain  h-full w-full'></div>
+                </div>
+                <h1 class="text-xs font-thin -ml-5">@grov.agency</h1>
+                <div class="w-[22px] h-[30px] ">
+                    <div class='letter bg-auto object-contain  h-full w-full'></div>
+                </div>
+                <h1 class="text-xs font-thin -ml-5">grovagency2023@gmail.com</h1>
+            </div>
+        </div>
+    </footer>
+
+</body>

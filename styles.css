@@ -13,3 +13,64 @@
 .cursor{
     background-image: url("./assets/Cursor\ in\ Window.svg");
 }
+.openai1{
+    background-image: url("./assets/openai-logo\ 5.svg");
+}
+.openai2{
+    background-image: url("./assets/openai-logo\ 6.svg");
+}
+.watch{
+    background-image: url("./assets/Stopwatch.svg");
+}
+.guarantee{
+    background-image: url("./assets/Guarantee.svg");
+}
+.hand{
+    background-image: url("./assets/Handshake\ Heart.svg");
+}
+.vector{
+    background-image: url("./assets/Vector.svg");
+}
+.vector0{
+    background-image: url("./assets/arrow.svg");
+}
+.lap1{
+    background-image: url("./assets/lap1.svg")    ;
+}
+.lap2{
+    background-image: url("./assets/lap2.svg")    ;
+}
+.lap3{
+    background-image: url("./assets/lap3.svg");
+}
+.letter{
+    background-image: url("./assets/Letter.svg")    ;
+}
+.insta{
+    background-image: url("./assets/Instagram.svg")    ;
+}
+.phone{
+    background-image: url("./assets/Phone.svg")    ;
+}
+.linkedin{
+    background-image: url("./assets/LinkedIn.svg")    ;
+}
+.logofoot{
+    background-image: url("./assets/logofoot.svg")    ;
+}
+.bigphone{
+    background-image: url("./assets/bigphone\ .svg")    ;
+}
+  /* WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color:#0F0F0F;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:#E5313A;
+    border-radius: 2px;
+}
