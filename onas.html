@@ -30,25 +30,25 @@
 </head>
 <body class="bg-[#0F0F0F] text-white font-[Proxima Nova] font-bold  ">
     <header class=" flex flex-row text-[#FFFFFF] bg-[#0F0F0F]">
-        <nav class="flex flex-row p-3 px-20 gap-x-10 justify-between w-full border-b border-b-[#545454] fixed bg-[#0F0F0F] ">
+        <nav class="flex flex-row p-3 px-10 md:px-20 gap-x-10 justify-between w-full bg-[#0F0F0F] border-b border-b-[#545454] fixed ">
             <div class="flex items-center">
-                <a class="block border border-black hover:bg-gradient-to-t rounded px-2 py-1 md:hidden "
-                    ><i class="fa fa-bars"></i></a>
                 <a class="h-[29px] w-[115px]"><div class="logo bg-auto object-contain h-full w-full"></div></a>
             </div>
             <div class="flex flex-row p-3 gap-x-10 font-bold">
                 <a href="./education.html" class="hidden  text-xs md:block hover:underline">Projekti</a>
                 <a href="./skills.html" class="hidden text-xs md:block hover:underline">Storetvi</a>
                 <button class=" rounded-xl h-[30px] w-[96px] -mt-2 bg-[#E5313A] hidden md:block hover:scale-125 transition-all duration-300">
-                    <a href="./experience.html" class="hidden text-xs md:block">Kontakt</a>
+                    <a href="./post.html" class="hidden text-xs md:block">Kontakt</a>
                 </button>
+                <a class="block w-[26px] h-[26px]  md:hidden "
+                    ><div class="ham bg-auto object-contain h-full w-full"></div></a>
             </div>
         </nav>
     </header>
 
     <div class="flex flex-col">
-        <div class="flex flex-row justify-between p-40 gap-x-40">
-            <div class="flex flex-row gap-x-4 p-4 items-start ">
+        <div class="flex flex-col gap-y-10 justify-between p-10 mt-8 md:p-40 md:gap-x-40 md:flex-row">
+            <div class="flex flex-col gap-y-4 p-4 items-center md:items-start md:flex-row md:gap-x-4">
                 <div>
                     <div class="w-[60px] h-[60px] bg-[#FF2E2E] flex flex-col justify-center items-center rounded-full shadow-lg shadow-[#E5313A] ">
                         <div class="w-[33px] h-[33px] ">
@@ -56,8 +56,8 @@
                         </div></div>
                 </div>
                     <div class="flex flex-col gap-y-6 justfify-center">
-                        <div class="text-white text-4xl items-center text-start mt-2"><h1>O nas</h1></div>
-                        <div class="text-white text-sm text-start font-normal">
+                        <div class="text-white text-4xl items-center text-center md:text-start mt-2"><h1>O nas</h1></div>
+                        <div class="text-white text-sm text-center md:text-start font-normal">
                             <p>Smisel naše agencije sega onkraj običajnih okvirov digitalnega ustvarjanja. Smo pionirji, prva digitalna agencija, 
                                 ki izpopolnjuje svoje storitve z napredno umetno inteligenco. Pri oblikovanju spletnih strani, 
                                 grafičnih podob in oglaševanj presežemo ustaljene meje, saj uporabljamo napredno AI tehnologijo, 
@@ -83,44 +83,52 @@
             </div>
         </div>
 
-        <div class="w-[905px] h-[231px] wavebg self-center flex flex-col gap-y-8 items-center p-16 mb-40">
+        <div class=" w-[330px] h-[231px] rounded-3xl md:w-[905px] md:h-[231px] wavebg self-center flex flex-col gap-y-8 items-center p-16 mb-40">
 
-            <h1 class="text-2xl text-center mt-4">Začnite nov projekt</h1>
-            <button class=" rounded-xl h-[30px] w-[96px] -mt-2 bg-white hidden md:block hover:scale-125 transition-all duration-300">
+            <h1 class="text-2xl text-center md:mt-4">Začnite nov projekt</h1>
+            <button class=" rounded-xl h-[30px] w-[96px] -mt-2 bg-white hover:scale-125 transition-all duration-300">
                 <a href="./post.html" class="text-xs text-black">Kontakt</a>
             </button>
         </div>
 
     </div>
 
-    <footer class=" flex flex-row text-[#FFFFFF] border-t border-t-[#545454] py-14 px-40 justify-between">
+    <footer class=" flex flex-col-reverse gap-y-6 text-[#FFFFFF] border-t border-t-[#545454] py-14 px-40 justify-between md:flex-row ">
         <div class="flex flex-col justify-between items-center">
-            <div class="w-[219px] h-[55px] ">
-                <div class='logofoot bg-auto object-contain  h-full w-full'></div>
+            <div class="w-[160px] h-[40px] md:w-[219px] md:h-[55px] ">
+                <div class='logofoot bg-contain object-contain  h-full w-full'></div>
                 <h1 class="text-xs font-thin"> @Copyright Grov Agency 2023</h1>
             </div>
         </div>
 
-        <div class="flex flex-col items-center gap-y-6">
-            <div class="flex flex-row gap-x-6 items-center w-[300px]">
-                <div class="w-[25px] h-[30px] ">
-                    <div class='insta bg-auto object-contain  h-full w-full'></div>
+        <div class="flex flex-col items-center gap-y-2 md:gap-y-6 ">
+            <div class="flex flex-col gap-y-2 gap-x-6 items-center w-[300px] md:flex-row">
+                <div class=" flex flex-row gap-x-1 items-center">
+                    <div class="w-[25px] h-[30px] ">
+                        <div class='insta bg-auto object-contain  h-full w-full'></div>
+                    </div>
+                    <h1 class="text-xs text-center font-thin">@grov.agency</h1>
                 </div>
-                <h1 class="text-xs font-thin -ml-5">@grov.agency</h1>
-                <div class="w-[25px] h-[30px] ">
-                    <div class='phone bg-auto object-contain  h-full w-full'></div>
+                <div class=" flex flex-row gap-x-1 items-center">
+                    <div class="w-[25px] h-[30px] ">
+                        <div class='phone bg-auto object-contain  h-full w-full'></div>
+                    </div>
+                    <h1 class="text-xs font-thin ">+386 470 427 410</h1>
                 </div>
-                <h1 class="text-xs font-thin -ml-5">+386 470 427 410</h1>
             </div>
-            <div class="flex flex-row gap-x-6 items-center w-[300px]">
-                <div class="w-[25px] h-[30px] ">
-                    <div class='linkedin bg-auto object-contain  h-full w-full'></div>
+            <div class="flex flex-col gap-y-2 gap-x-6 items-center w-[300px] md:flex-row">
+                <div class=" flex flex-row gap-x-1 items-center">
+                    <div class="w-[25px] h-[30px] ">
+                        <div class='linkedin bg-auto object-contain  h-full w-full'></div>
+                    </div>
+                    <h1 class="text-xs font-thin ">@grov.agency</h1>
                 </div>
-                <h1 class="text-xs font-thin -ml-5">@grov.agency</h1>
-                <div class="w-[22px] h-[30px] ">
-                    <div class='letter bg-auto object-contain  h-full w-full'></div>
+                <div class=" flex flex-row gap-x-1 items-center">
+                    <div class="w-[22px] h-[30px] ">
+                        <div class='letter bg-auto object-contain  h-full w-full'></div>
+                    </div>
+                    <h1 class="text-xs font-thin">grovagency2023@gmail.com</h1>
                 </div>
-                <h1 class="text-xs font-thin -ml-5">grovagency2023@gmail.com</h1>
             </div>
         </div>
     </footer>
