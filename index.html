@@ -28,18 +28,20 @@
         }
     </script>
 </head>
-<body class="bg-[#0F0F0F] font-[Proxima Nova] font-bold">
+<body class="bg-[#0F0F0F] font-[Proxima Nova] font-bold ">
     <header class=" flex flex-row text-[#FFFFFF] bg-[#0F0F0F]">
         <nav class="flex flex-row p-3 px-20 gap-x-10 justify-between w-full bg-[#0F0F0F] border-b border-b-[#545454] fixed ">
             <div class="flex items-center">
-                <a class="block border border-black hover:bg-gradient-to-t rounded px-2 py-1 md:hidden "
-                    ><i class="fa fa-bars"></i></a>
                 <a class="h-[29px] w-[115px]"><div class="logo bg-auto object-contain h-full w-full"></div></a>
             </div>
             <div class="flex flex-row p-3 gap-x-10 font-bold">
-                <a href="./education.html" class="hidden  text-xs md:block">Projekti</a>
-                <a href="./skills.html" class="hidden text-xs md:block">Storetvi</a>
-                <button class=" rounded-xl h-[30px] w-[96px] -mt-2 bg-[#E5313A] hidden md:block"><a href="./post.html" class="hidden text-xs md:block">Kontakt</a></button>
+                <a href="./education.html" class="hidden  text-xs md:block hover:underline">Projekti</a>
+                <a href="./skills.html" class="hidden text-xs md:block hover:underline">Storetvi</a>
+                <button class=" rounded-xl h-[30px] w-[96px] -mt-2 bg-[#E5313A] hidden md:block hover:scale-125 transition-all duration-300">
+                    <a href="./post.html" class="hidden text-xs md:block">Kontakt</a>
+                </button>
+                <a class="block w-[26px] h-[26px]  md:hidden "
+                    ><div class="ham bg-auto object-contain h-full w-full"></div></a>
             </div>
         </nav>
     </header>
@@ -48,8 +50,8 @@
             <h1 class="text-6xl text-[#FFFFFF] text-start mt-3"><span>IDEJE V REALNOST<br> Z </span><span class="text-[#FF2E2E] ">UMENTO <br>INTELIGENCO</span>
             </h1>
             <div class="flex flex-row gap-x-6 mt-10 text-xs  ">
-                <button class=" rounded-xl h-[30px] w-[96px]  bg-[#FFFFFF] ">Nov Projekt</button>
-                <button class=" rounded-xl h-[30px] w-[96px]  bg-[#E5313A] text-white">O nas</button></div>
+                <button class=" rounded-xl h-[30px] w-[96px]  bg-[#FFFFFF] hover:scale-125 transition-all duration-300">Nov Projekt</button>
+                <button class=" rounded-xl h-[30px] w-[96px]  bg-[#E5313A] text-white hover:scale-125 transition-all duration-300 hover:bg-[#FF2E2E]">O nas</button></div>
             </div>
         <div class="w-[445px] h-[280px]">
             <div class='dash bg-auto object-contain h-full w-full'></div>
@@ -66,7 +68,7 @@
                 </div>
             </div>
                 <div class="text-white"><h1>SPLETNI RAZVOJ</h1></div>
-                <button class=" rounded-xl h-[30px] w-[96px]  bg-[#FF2E2E] text-white text-xs">vec</button>
+                <button class=" rounded-xl h-[30px] w-[96px]  bg-[#FF2E2E] text-white text-xs hover:scale-125 transition-all duration-300">vec</button>
         </div>
 
         <div class="flex flex-col gap-y-6 px-8 py-4 items-center border-2 border-slate-300 rounded-lg w-[231px] h-[227px]">
@@ -76,7 +78,7 @@
                 </div>
             </div>
                 <div class="text-white"><h1>GRAFICNA PODOBA</h1></div>
-                <button class=" rounded-xl h-[30px] w-[96px]  bg-[#FF2E2E] text-white text-xs">vec</button>
+                <button class=" rounded-xl h-[30px] w-[96px]  bg-[#FF2E2E] text-white text-xs hover:scale-125 transition-all duration-300">vec</button>
         </div>
 
         <div class="flex flex-col gap-y-6 px-8 py-4 items-center border-2 border-slate-300 rounded-lg w-[231px] h-[227px]">
@@ -86,7 +88,7 @@
                 </div>
             </div>
                 <div class="text-white"><h1>OGLASEVANJE</h1></div>
-                <button class=" rounded-xl h-[30px] w-[96px]  bg-[#FF2E2E] text-white text-xs">vec</button>
+                <button class=" rounded-xl h-[30px] w-[96px]  bg-[#FF2E2E] text-white text-xs hover:scale-125 transition-all duration-300">vec</button>
         </div>
 
         </div>
@@ -95,8 +97,8 @@
 
         <div class="flex flex-col items-center mt-28 ">
             <div class=" flex flex-col w-[840px] h-[375px] text-white items-center border-[1px] border-slate-300 rounded-lg pt-12 pb-8 px-20 gap-y-4">
-                <h1 class="text-6xl mb-7">Zakaj izbrati nas?</h1>
-                <p class="text-center text-xl leading-6">Smo digitalna agencija, ki se ukvarja s celotnim procesom izdelave, vzdrževanja in oglaševanja podjetij ter znamk.
+                <h1 class="text-6xl mb-7 tracking-wide">Zakaj izbrati nas?</h1>
+                <p class="text-center text-xl leading-6 ">Smo digitalna agencija, ki se ukvarja s celotnim procesom izdelave, vzdrževanja in oglaševanja podjetij ter znamk.
                     Naše spletne strani so obiskovalcem poznane po visokih hitrostih nalaganja in modernimi metodami za izboljšanje
                     prodaje</p>
                 <div class=" flex flex-row rounded-3xl h-[37px] w-[470px]  bg-[#0F0F0F] text-white text-xs border-[1px] border-[#E5313A] items-center p-2 mt-4">
@@ -172,7 +174,8 @@
                         <h1 class="items-center text-white text-4xl">
                             Talent Verse
                         </h1>
-                        <div class=" flex flex-row items-center  justify-center p-3 rounded-lg h-[40px] w-[116px]  bg-[#FF2E2E] text-white text-xs mt-6 gap-x-2">
+                        <div class=" flex flex-row items-center  justify-center p-3 rounded-lg h-[40px] w-[116px]  bg-[#FF2E2E] text-white text-xs mt-6 gap-x-2
+                        hover:scale-125 transition-all duration-300">
                             <div class="w-[14px] h-[14px] ">
                                 <div class='vector0 bg-auto object-contain  h-full w-full'></div>
                             </div>
@@ -193,7 +196,8 @@
                         <h1 class="items-center text-white text-4xl">
                             AI Image
                         </h1>
-                        <div class=" flex flex-row items-center  justify-center p-3 rounded-lg h-[40px] w-[116px]  bg-[#FF2E2E] text-white text-xs mt-6 gap-x-2">
+                        <div class=" flex flex-row items-center justify-center p-3 rounded-lg h-[40px] w-[116px]
+                        bg-[#FF2E2E] text-white text-xs mt-6 gap-x-2 hover:scale-125 transition-all duration-300">
                             <div class="w-[14px] h-[14px] ">
                                 <div class='vector0 bg-auto object-contain  h-full w-full'></div>
                             </div>
@@ -214,7 +218,8 @@
                         <h1 class="items-center text-white text-4xl">
                             One home
                         </h1>
-                        <div class=" flex flex-row items-center  justify-center p-3 rounded-lg h-[40px] w-[116px]  bg-[#FF2E2E] text-white text-xs mt-6 gap-x-2">
+                        <div class=" flex flex-row items-center  justify-center p-3 rounded-lg h-[40px] w-[116px]  bg-[#FF2E2E] text-white text-xs mt-6 gap-x-2
+                        hover:scale-125 transition-all duration-300">
                             <div class="w-[14px] h-[14px] ">
                                 <div class='vector0 bg-auto object-contain  h-full w-full'></div>
                             </div>
@@ -256,5 +261,5 @@
                 </div>
             </div>
         </footer>
-
+        <script src="main.js"></script>
 </body>

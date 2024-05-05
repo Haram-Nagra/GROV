@@ -1,6 +1,9 @@
 .logo{
     background-image: url("./assets/logo.svg");
 }
+.logo3{
+    background-image: url("./assets/logo3.svg");
+}
 .dash{
     background-image: url("./assets/pic1.svg");
 }
@@ -61,6 +64,23 @@
 .bigphone{
     background-image: url("./assets/bigphone\ .svg")    ;
 }
+.bigcursor{
+    background-image: url("./assets/bigcursor.svg")    ;
+}
+.ham{
+    background-image: url("./assets/Menu.svg");
+}
+
+.correct{
+    background-image: url("./assets/correct.svg");
+}
+.incorrect{
+    background-image: url("./assets/incorrect.png");
+}
+
+.wavebg{
+    background-image: url("./assets/wavebg.png");
+}
   /* WebKit (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
     width: 12px;
@@ -74,3 +94,5 @@
     background-color:#E5313A;
     border-radius: 2px;
 }
+
+

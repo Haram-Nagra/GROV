@@ -28,7 +28,7 @@
         }
     </script>
 </head>
-<body class="bg-[#0F0F0F] text-white font-[Proxima Nova] font-bold">
+<body class="bg-[#0F0F0F] text-white font-[Proxima Nova] font-bold ">
     <header class=" flex flex-row text-[#FFFFFF] ">
         <nav class="flex flex-row p-3 px-20 gap-x-10 justify-between w-full border-b border-b-[#545454] fixed ">
             <div class="flex items-center">
@@ -37,14 +37,16 @@
                 <a class="h-[29px] w-[115px]"><div class="logo bg-auto object-contain h-full w-full"></div></a>
             </div>
             <div class="flex flex-row p-3 gap-x-10 font-bold">
-                <a href="./education.html" class="hidden  text-xs md:block">Projekti</a>
-                <a href="./skills.html" class="hidden text-xs md:block">Storetvi</a>
-                <button class=" rounded-xl h-[30px] w-[96px] -mt-2 bg-[#E5313A] hidden md:block"><a href="./experience.html" class="hidden text-xs md:block">Kontakt</a></button>
+                <a href="./education.html" class="hidden  text-xs md:block hover:underline">Projekti</a>
+                <a href="./skills.html" class="hidden text-xs md:block hover:underline">Storetvi</a>
+                <button class=" rounded-xl h-[30px] w-[96px] -mt-2 bg-[#E5313A] hidden md:block hover:scale-125 transition-all duration-300">
+                    <a href="./experience.html" class="hidden text-xs md:block">Kontakt</a>
+                </button>
             </div>
         </nav>
     </header>
 
-    <div class="flex flex-row   justify-between p-40">
+    <div class="flex flex-row   justify-between p-28">
 
         <div class="flex flex-row gap-x-6 p-4 items-start ">
             <div>
@@ -67,22 +69,32 @@
                 </div>
         </div>
 
-        <div id="form" class="flex flex-col items-start gap-y-4 p-4 ">
-            <h1 class="text-xl -mb-8">Pošljite nam sporočilo!</h1>
-            <div class="flex flex-row items-center justify-between w-[500px]">
-                <input
-                class="p-2  h-[40px] w-[240px] bg-white rounded-3xl mt-6 placeholder-gray focus:outline-none font-normal"
-                type="text" id="fname" name="fname" placeholder="Name">
-                <input
-                class=" p-2 h-[40px] w-[240px] bg-white rounded-3xl placeholder-gray focus:outline-none font-normal mt-6"
-                type="text" id="em" name="em" placeholder="Email">
+        <div  class="flex flex-col items-start gap-y-2 p-4 ">
+            <h1 class="text-xl">Pošljite nam sporočilo!</h1>
+            <div class="flex flex-col justify-between w-[500px] h-[320px] rounded-3xl"  id="form">
+                <div class="flex flex-row  justify-between w-[500px] text-black">
+                    <input
+                    class="p-2  h-[40px] w-[240px] bg-white rounded-3xl placeholder-gray focus:outline-none font-normal"
+                    type="text" id="fname" name="fname" placeholder="Name">
+                    <input
+                    class=" p-2 h-[40px] w-[240px] bg-white rounded-3xl placeholder-gray focus:outline-none font-normal "
+                    type="text" id="em" name="em" placeholder="Email">
+                </div>
+
+                <div class=" mt-24 w-[120px] h-[120px] border-[12px] border-t-slate-700 rounded-full hidden bg-white animate-spin" id="loader"></div>
+                <div class="w-[120px] h-[120px] mt-24 hidden" id="correct">
+                    <div class='correct bg-cover object-contain h-full w-full' ></div>
+                </div>
+                <div class="w-[33px] h-[33px] mt-24 hidden" id="incorrect">
+                    <div class='incorrect bg-cover object-contain  h-full w-full'></div>
+                </div>
+
+                <textarea
+                    class="p-2 h-[200px] w-[500px] bg-white rounded-3xl placeholder-gray focus:outline-none font-normal text-black"
+                    id="mname " name="msg" placeholder="Message"></textarea>
+        
+                <button class=" bg-white rounded-3xl w-[500px] h-[40px] text-black hover:bg-slate-300" type="button" onclick="clickhandler()" >Poslji</button>
             </div>
-    
-            <textarea
-                class="p-2 h-[200px] w-[500px] bg-white rounded-3xl placeholder-gray focus:outline-none font-normal"
-                id="mname " name="msg" placeholder="Message"></textarea>
-    
-            <button class=" bg-white rounded-3xl w-[500px] h-[40px] text-black" type="button" bg-white rounded-3xl >Poslji</button>
         </div>
     </div>
 
@@ -117,5 +129,5 @@
             </div>
         </div>
     </footer>
-
+    <script src="main.js"></script>
 </body>
